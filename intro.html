@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Address Book</title>
+    <style>
+      body{
+          margin:0;
+          height:100;
+          background-color:white;
+      }
+      .header{
+          padding:15px 0;
+          background-color:white;
+      }
+      .header-content{
+          display:flex;
+          flex-direction:row;
+          justify-content:flex-start;
+          align-items:flex-start;
+          border:
+      }
+      .logo-content{
+        display:flex;
+          flex-direction:row;
+          justify-content:flex-start;
+          border:0px;
+          width:80%;
+      }
+      .add-text{
+        font: 15px Arial, sans-serif;
+        font-family:"montserat",sans-serif;
+        font-size:150%;
+      }
+      .add-book{
+          color:blue;
+      }
+
+      .form{
+          width:30%;
+          padding:44px 60px;
+          background:#ffffff 0% 0% norepeat padding-box;
+          border:1px solid #f5f5f5;
+      }
+      .form-content{
+          min-height:calc(100% -80px);
+          background-color:#f7f7f7f7;
+          display:flex;
+          justify-content:center;
+          align-items:center;
+          border:0px solid green;
+      }
+
+      .form-head{
+          display:flex;
+          justify-content:center;
+         font:normal normal 24px/37px Roboto;
+         background-color:dodgerblue;
+         padding:10px 10px 10px 10px;
+      }
+   
+    .row-content{
+        width:100%;
+        display:flex;
+        flex-direction:row;
+        margin-bottom:10px;
+        align-items:flex-start;
+        border:1px solid black;
+    }
+    .label{
+        min-width:50px;
+    }
+
+    label{
+        padding:12px 12px 12px 0;
+        display:inline-block;
+    }
+    .text{
+        font-size:20%;
+        font-family:Roboto;
+        color:blue;
+        opacity:1;
+    }
+  
+
+    .input{
+        width:100%;
+        border:0px;  
+        resize:vertical;
+    }
+
+
+    fieldset {
+    background-color: white;
+   
+}
+
+legend {
+  color:dodgerblue;
+  padding:0 10px 10px 0;
+  display:inline-block;
+}
+ 
+     select{
+         width:133px;
+         padding:12px;
+         border:1px solid dodgerblue;
+        
+     }
+    </style>
+</head>
+<body>
+    <header class="header-content header"></header>
+    <div class="logo-content">
+        <img src="C:\Users\mothilal\Desktop\._logo.png">
+        <div>
+            <span class="add-text add-book">Address</span><br>
+            <span class="add-text">Book</span>
+        </div>
+    </div>
+    <div>
+        <div class="form-content" >
+            <form class="form" action="#" onsubmit="save();return false">
+         <div class="form-head"> Person address form </div><br/>
+         
+            <fieldset><legend> Fullname </legend>
+                <input class="input" type="text" name="Fullname">
+            </fieldset>
+           <fieldset><legend>Address</legend>
+        </fieldset><br/>
+            <select id="city" >
+                <option value="Select city">Select city</option>
+                <option value="Bangalore">Bangalore</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Kerala">Kerala</option>
+              </select>
+
+            <select id="state">
+                <option value="Select state">Select state</option>
+                <option value="Tamilnadu">Tamilnadu</option>
+                <option value="Kerala">Kerala</option>
+                <option value="Mumbai">Mumbai</option>
+                <option Value="Delhi">Delhi</option>
+            </select>
+
+            <select id="zipcode">
+                <option value="Zip code">Zip code</option>
+                <option value="632598">632598</option>
+                <option value="64321">654321</option>
+                <option value="657890">657890</option>
+                <option Value="609877">609877</option>
+            </select> <br/><br/>
+
+            <div class="row-content">
+                <input class="input" id="Phonenumber" placeholder="Phonenumber">
+                
+            </div>
+           
+    
+        </form>
+    </div>
+    </header>
+</body>
+</html>
